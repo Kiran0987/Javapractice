@@ -36,6 +36,23 @@ public class Main {
 	  a = 50;
 	  int sum2 = add(5, a);
 	 System.out.println(sum2);
+	 
+	 Parrot parrot1 = new Parrot();
+	 parrot1.name ="Parrot";
+	 parror1.colour="Green";
+	 parrot1.species="Bird";
+	 
+	 parrot1.fly();
+	 parrot1.swim();
+	 
+	 Math math = new Math();
+	 int x = math.add(10, 8);
+	 int y = math.sub(10, 8);
+	 int z = math.add(10, 8);
+	 int c = math.add(10, 8);
+
+	 System.out.println("X = " + x + ",Y = " + y + ", Z = " + z + ",C = " + c);
+	 
   }
 
 static int add(int a , int b) {
@@ -43,3 +60,16 @@ static int add(int a , int b) {
    }
 }
 
+class Parrot {
+	String name;
+	String colour;
+	String species;
+	
+	void fly() {
+		System.out.println("Parrot can Fly");
+	}
+	
+	void swim() {
+		System.out.println("Parrot cannot swim");
+	}
+}
